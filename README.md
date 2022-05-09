@@ -21,7 +21,7 @@
 
 ### ✨ [Demo](https://mrunknown.de)
 
-## Install
+## Install (Node.JS 16.15.0v & NPM 8.5.5v)
 
 ```sh
 npm install
