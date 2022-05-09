@@ -1,0 +1,25 @@
+{
+  "name": "unknownai",
+  "version": "1.0.0",
+  "description": "a bot from me (a noob) in NodeJS",
+  "main": "main.js",
+  "scripts": {
+    "test": "debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrUnknownDE/UnknownAI.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "german",
+    "discordbot"
+  ],
+  "author": "MrUnknownDE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrUnknownDE/UnknownAI/issues"
+  },
+  "homepage": "https://github.com/MrUnknownDE/UnknownAI#readme"
+}
