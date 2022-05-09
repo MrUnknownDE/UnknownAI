@@ -4,7 +4,7 @@
   "description": "a bot from me (a noob) in NodeJS",
   "main": "main.js",
   "scripts": {
-    "test": "debug"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/MrUnknownDE/UnknownAI/issues"
   },
-  "homepage": "https://github.com/MrUnknownDE/UnknownAI#readme"
+  "homepage": "https://github.com/MrUnknownDE/UnknownAI#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "discord.js": "^13.6.0",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.3",
+    "npx": "^3.0.0",
+    "path": "^0.12.7",
+    "quick.db": "^7.1.3"
+  }
 }

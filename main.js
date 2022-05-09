@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require('./src/config.json');
+const config = require('./configs/config.json');
 const fs = require('fs');
 const db = require('quick.db');
 const path = require('path');
