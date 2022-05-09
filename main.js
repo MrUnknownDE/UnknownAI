@@ -1,11 +1,19 @@
 // PACKAGES
 
+import fetch from 'node-fetch';
+
 const Discord = require('discord.js');
 const config = require('./configs/config.json');
 const fs = require('fs');
 const db = require('quick.db');
 const path = require("path");
-const client = new Discord.Client;
+const client = new Discord.Client({
+    intents: [
+        Discord.Intents.FLAGS.GUILDS,
+        Discord.Intents.FLAGS.GUILD_MESSAGES,
+        Discord.Intents.FLAGS.GUILD_VOICE_STATES
+    ]
+});
 const { Player } = require('discord-player');
 const player = new Player(client);
 
@@ -22,15 +30,15 @@ client.filters = require('./configs/filters.json');
 client.categories = fs.readdirSync('./commands');
 
 
-fs.readdir('./player/', (err, files) => {
-    if (err) return console.error(err);
-    files.forEach(file => {
-        const event = require(`./player/${file}`);
-        let eventName = file.split(".")[0];
-        console.log(`Loading player event ${eventName}`);
-        client.player.on(eventName, event.bind(null, client));
-    });
-});
+// fs.readdir('./player/', (err, files) => {
+//    if (err) return console.error(err);
+//    files.forEach(file => {
+//        const event = require(`./player/${file}`);
+//        let eventName = file.split(".")[0];
+//        console.log(`Loading player event ${eventName}`);
+//        client.player.on(eventName, event.bind(null, client));
+//    });
+//});
 
 
 // EVENTS

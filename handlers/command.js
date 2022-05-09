@@ -8,5 +8,5 @@ module.exports = (client) => {
             if (pull.config.aliases) pull.config.aliases.forEach(cmd => client.aliases.set(cmd, pull.config.name));
         };
     };
-    ["Folder Names Inside Commands folder"].forEach(cmd => load(cmd));
+    ["utility"].forEach(cmd => load(cmd));
 };
